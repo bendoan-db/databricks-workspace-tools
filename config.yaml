@@ -1,0 +1,12 @@
+databricks_config:
+  catalog: doan
+  schema: dbdemos_mlops
+  model: workspace_tool_agent
+  experiment: workspace_tool_agent
+
+llm_config:
+  llm_endpoint_name: databricks-llama-4-maverick
+  llm_parameters:
+    max_tokens: 200
+    temperature: 0.0
+  llm_prompt_template: 'You are a Databricks workspace assistant with access to a job runner tool, and only a job runner tool. When asked to do so, run the job by executing the tool'
